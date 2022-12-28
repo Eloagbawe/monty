@@ -138,8 +138,39 @@ Solution to The Monty Project
         If the stack is empty, print the error message L<line_number>: can't pchar, stack empty, followed by a new line, and exit with the status EXIT_FAILURE
 
 12 - Implement the pstr opcode
+
+    The pstr opcode
+
+    The opcode pstr prints the string starting at the top of the stack, followed by a new line.
+
+        Usage: pstr
+        The integer stored in each element of the stack is treated as the ascii value of the character to be printed
+        The string stops when either:
+            the stack is over
+            the value of the element is 0
+            the value of the element is not in the ascii table
+        If the stack is empty, print only a new line
+
 13 - Implement the rotl opcode
+
+    The rotl opcode
+
+    The opcode rotl rotates the stack to the top.
+
+        Usage: rotl
+        The top element of the stack becomes the last one, and the second top element of the stack becomes the first one
+        rotl never fails
+
 14 - Implement the rotr opcode
+
+    The rotr opcode
+
+    The opcode rotr rotates the stack to the bottom.
+
+        Usage: rotr
+        The last element of the stack becomes the top element of the stack
+        rotr never fails
+
 15 - Implement the stack and queue opcodes
 16 - Brainfck script prints "School" followed by a new line
 17 - Adds two digits given by the user
