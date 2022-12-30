@@ -172,7 +172,31 @@ Solution to The Monty Project
         rotr never fails
 
 15 - Implement the stack and queue opcodes
+
+        The stack opcode
+
+        The opcode stack sets the format of the data to a stack (LIFO). This is the default behavior of the program.
+
+            Usage: stack
+
+        The queue opcode
+
+        The opcode queue sets the format of the data to a queue (FIFO).
+
+            Usage: queue
+        
+        When switching mode:
+
+            The top of the stack becomes the front of the queue
+            The front of the queue becomes the top of the stack
+
 16 - Brainfck script prints "School" followed by a new line
+
+        All your Brainf*ck files should be stored inside the bf sub directory
+        You can install the bf interpreter to test your code: sudo apt-get install bf
+
+Read: [Brainf*ck](https://en.wikipedia.org/wiki/Brainfuck)
+
 17 - Adds two digits given by the user
 18 - Multiply two digits given by the user
 19 - Multiply two digits given by the user
